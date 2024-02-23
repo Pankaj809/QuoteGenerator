@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quote Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="quote-container">
+    <p id="quote">Press "Next" or select a category to see a quote.</p>
+  </div>
+  <div class="controls">
+    <div class="category-dropdown">
+      <label for="category">Select Category:</label>
+      <select id="category" onchange="changeCategory()">
+        <option value="science">Science</option>
+        <option value="inspiration">Inspiration</option>
+      </select>
+    </div>
+    <div class="carousel">
+      <button class="carousel-button" id="prevBtn" onclick="prevQuote()">Previous</button>
+      <button class="carousel-button" id="nextBtn" onclick="nextQuote()">Next</button>
+    </div>
+    <div class="carousel-indicators" id="indicators"></div>
+    <button class="carousel-button" id="randomBtn" onclick="randomQuote()">Random</button>
+    <label for="darkModeToggle">Dark Mode</label>
+    <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()">
+    <label for="fontSizeToggle"> &nbsp;Font Size&nbsp;&nbsp;</label>
+    <button class="carousel-button" id="decreaseFontBtn" onclick="decreaseFontSize()">-</button>
+    <button class="carousel-button" id="increaseFontBtn" onclick="increaseFontSize()">+</button>
+  </div>
+</div>
+<script src="quotes.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
