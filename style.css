@@ -36,12 +36,11 @@ body {
   margin-bottom: 20px;
 }
 
-
 .category-dropdown {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-60%, -400%);
+  top: 20px;
+  left: 20px;
+  z-index: 1;
   background-color: #fff;
   padding: 8px;
   border-radius: 5px;
@@ -59,17 +58,21 @@ body {
 .buttons-container {
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  justify-content: center;
+  margin-top: 10px; /* Adjust margin for better spacing */
 }
 
 .toggle-container {
   display: flex;
   align-items: center;
+  margin-left: 20px; /* Adjust margin for better spacing */
 }
 
 .carousel {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-top: 10px; /* Adjust margin for better spacing */
 }
 
 .carousel-button {
@@ -79,7 +82,7 @@ body {
   padding: 5px 10px;
   cursor: pointer;
   border-radius: 5px;
-  margin-right: 10px;
+  margin: 0 5px; /* Adjust margin for better spacing */
 }
 
 .carousel-button:hover {
@@ -90,7 +93,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  margin-top: 10px; /* Adjust margin for better spacing */
 }
 
 .carousel-indicator {
